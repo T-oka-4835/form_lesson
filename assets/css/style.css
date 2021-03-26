@@ -1,1 +1,172 @@
 @charset "utf-8";
+
+.body-wrapper {
+  width: 100%;
+  background: #f2f6f7;
+  padding: 32px 0;
+}
+
+.inner-wrapper {
+  width: 640px; 
+  margin: 0 auto 32px;
+  background: #fff;
+  padding: 48px 64px;
+  box-sizing: border-box;
+}
+
+/* アカウント情報の区切りより上部  */
+.top-text {
+  text-align: center;
+  margin-bottom: 24px; 
+  color: #545658; 
+  font-size: 24px;
+}
+
+.sns-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sns-button {
+  padding: 13px;
+}
+
+.facebook {
+  color: #fff;
+  background: #3b5999;
+  border-color: #3b5999; 
+}
+
+.google {
+  color: #dd4b39;
+  background: #f7f7f7;
+  margin-left: 8px;
+}
+
+.sns-message {
+  color: #949697; 
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.account-border {
+  color: #545658; 
+  margin: 20px 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.account-border:before, .account-border:after {
+  border-top: 0.5px solid #949697; ; 
+  content: ""; 
+  width: 40%;
+} 
+
+.account-text {
+  color: #949697; 
+  font-size: 12px;
+}
+
+/* アカウント情報の区切りより下部  */
+.name-form-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.caution {
+  color: red;
+}
+
+.name-form-container {
+  width: 100%;
+}
+
+.form-wrapper {
+  margin-bottom: 20px;
+}
+
+.form-text {
+  margin-bottom: 5px; 
+  font-size: 12px; 
+  color: #545658;
+}
+
+.name-form {
+  width: 90%;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 5px;
+  color: #545658;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+}
+
+.gender-container {
+  color: #545658;
+}
+
+.hometown {
+  box-sizing: border-box;
+  height: 36px; 
+  width: 50%; 
+  padding: 5px; 
+  color: #545658;
+  font-size: 13px;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.full-form {
+  box-sizing: border-box; 
+  height: 36px; 
+  width: 100%; 
+  padding: 5px; 
+  color: #545658; 
+  font-size: 13px; 
+  line-height: 2; 
+  background: #fbfbfb; 
+  border: 1px solid #d9d9d9; 
+}
+
+.course-box {
+  display: block;
+}
+
+.area-form {
+  box-sizing: border-box;
+  width: 100%; 
+  height: 100px;
+  padding: 5px; 
+  color: #545658;
+  font-size: 13px; 
+  line-height: 2; 
+  background: #fbfbfb; 
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.submit-button {
+  padding: 13px; 
+  background: #01bfbd; 
+  color: #fff; 
+  width: 100%;
+  border: none; 
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.questions {
+  font-size: 12px;
+  text-align: center;
+}
+
+.question-text {
+  margin-bottom: 8px;
+}
+
+.form-link {
+  color: #01bfbd; 
+}

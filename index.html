@@ -10,6 +10,111 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+    <div class="body-wrapper">
+      <div class="inner-wrapper">
+        <!-- アカウント情報の区切りより上部 -->
+        <div class="top-container">
+          <h4 class="top-text">アカウント作成</h4>
+          <div class="sns-button-container">
+            <a href="#" class="sns-button facebook">Facebookでスタート</a>
+            <a href="#" class="sns-button google">Googleでスタート</a>
+          </div>
+          <p class="sns-message">
+            タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。
+          </p>
+          <div class="account-border">
+            <p class="account-text">アカウント情報</p>
+          </div>
+        </div>
+        <!-- アカウント情報の区切りより下部 -->
+        <div class="main-container">
+          <div class="name-form-wrapper">
+            <div class="name-form-container">
+              <p class="form-text">名字<span class="caution">*</span></p>
+              <input type="text" name="#" class="name-form">
+            </div>
+            <div class="name-form-container">
+              <p class="form-text">名前<span class="caution">*</span></p>
+              <input type="text" name="#" class="name-form">
+            </div>
+          </div>
 
+          <div class="form-wrapper">
+            <p class="form-text">性別</p>
+            <form class="gender-container">
+              <input type="radio" name="gender-button" value="男性">男性
+              <input type="radio" name="gender-button" value="女性">女性
+              <input type="radio" name="gender-button" value="その他">その他
+            </form>
+          </div>
+
+          <div class="form-wrapper">
+            <p class="form-text">出身</p>
+            <select name="hometown" class="hometown">
+              <option value="東京">東京</option>
+              <option value="千葉">千葉</option>
+              <option value="埼玉">埼玉</option>
+              <option value="神奈川">神奈川</option>
+            </select>
+          </div>
+
+          <div class="form-wrapper">
+            <p class="form-text">Eメール<span class="caution">*</span></p>
+            <input type="email" placeholder="ex) hoge@example.com" class="full-form"> 
+          </div>
+
+          <div class="form-wrapper">
+            <p class="form-text">電話番号</p>
+            <input type="email" placeholder="ex) hoge@example.com" class="full-form"> 
+          </div>
+
+          <div class="form-wrapper">
+            <p class="form-text">パスワード<span class="caution">*</span></p>
+            <input type = "password" class="full-form">
+          </div>
+
+          <div class="form-wrapper">
+            <p class="form-text">パスワード(確認用)<span class="caution">*</span></p>
+            <input type="password" class="full-form"> 
+          </div>
+
+          <div class="form-wrapper">
+            <p class="form-text">希望コース</p>
+              <div class="course-container">
+              <label class="course-box">
+                <input type="checkbox" name="" value="" >フロントエンド
+              </label>
+              <label class="course-box">
+                <input type="checkbox" name="" value="">バックエンド
+              </label>
+              <label class="course-box">
+                <input type="checkbox" name="" value="" >アプリ
+              </label>
+              </div>
+          </div>
+
+          <div class="form-wrapper">
+            <p class="form-text">備考</p>
+            <textarea class="area-form"></textarea>
+          </div>
+
+          <div class="form-wrapper">
+            <input type="submit" value="アカウント作成" class="submit-button">
+          </div>
+
+          <div>
+            <p class="form-text">
+              アカウントを作成することにより、<a href="#" class="form-link">利用規約</a>と<a href="#" class="form-link">プライバシーポリシー</a>に同意するものとします。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="questions">
+        <p class="question-text">すでにアカウントをお持ちですか?<a href="#" class="form-link">ログイン</a></p>
+        <a href="#" class="form-link">認証メールが届きませんか?</a>
+      </div>
+
+    </div>
   </body>
 </html>
