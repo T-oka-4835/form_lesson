@@ -1,45 +1,58 @@
 @charset "utf-8";
 
+/* 共通クラス */
+.sns-button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 13px;
+  text-align: center;
+  width: 50%;
+}
+
+.form-design {
+  background: #fbfbfb;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+}
+/* 共通クラス */
+
 .body-wrapper {
-  width: 100%;
   background: #f2f6f7;
   padding: 32px 0;
+  width: 100%;
 }
 
 .inner-wrapper {
-  width: 640px; 
-  margin: 0 auto 32px;
   background: #fff;
-  padding: 48px 64px;
   box-sizing: border-box;
+  margin: 0 auto 32px;
+  padding: 48px 64px;
+  width: 640px; 
 }
 
 /* アカウント情報の区切りより上部  */
 .top-text {
-  text-align: center;
-  margin-bottom: 24px; 
   color: #545658; 
   font-size: 24px;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .sns-button-container {
   display: flex;
-  justify-content: center;
-}
-
-.sns-button {
-  padding: 13px;
+  margin-bottom: 8px;
 }
 
 .facebook {
-  color: #fff;
   background: #3b5999;
-  border-color: #3b5999; 
+  border: 1px solid #3b5999; 
+  color: #fff;
 }
 
 .google {
-  color: #dd4b39;
   background: #f7f7f7;
+  border: 1px solid #d9d9d9; 
+  color: #dd4b39;
   margin-left: 8px;
 }
 
@@ -47,20 +60,19 @@
   color: #949697; 
   font-size: 12px;
   text-align: center;
-  margin-top: 5px;
 }
 
 .account-border {
-  color: #545658; 
-  margin: 20px 0;
-  display: flex; 
   align-items: center; 
+  color: #545658; 
+  display: flex; 
   justify-content: center;
+  margin: 20px 0;
 }
 
 .account-border:before, .account-border:after {
-  border-top: 0.5px solid #949697; ; 
   content: ""; 
+  border-top: 0.5px solid #949697; ; 
   width: 40%;
 } 
 
@@ -70,37 +82,34 @@
 }
 
 /* アカウント情報の区切りより下部  */
-.name-form-wrapper {
-  display: flex;
+.form-wrapper {
   margin-bottom: 20px;
 }
 
-.caution {
-  color: red;
+.name-form-wrapper {
+  display: flex;
 }
 
 .name-form-container {
   width: 100%;
 }
 
-.form-wrapper {
-  margin-bottom: 20px;
+.caution {
+  color: red;
 }
 
 .form-text {
-  margin-bottom: 5px; 
-  font-size: 12px; 
   color: #545658;
+  font-size: 12px; 
+  margin-bottom: 5px; 
 }
 
 .name-form {
-  width: 90%;
-  box-sizing: border-box;
-  height: 36px;
-  padding: 5px;
   color: #545658;
-  background: #fbfbfb;
-  border: 1px solid #d9d9d9;
+  height: 36px;
+  outline-color: #01bfbd;
+  padding: 5px;
+  width: 90%;
 }
 
 .gender-container {
@@ -108,27 +117,22 @@
 }
 
 .hometown {
-  box-sizing: border-box;
-  height: 36px; 
-  width: 50%; 
-  padding: 5px; 
+  border-radius: 3px;
   color: #545658;
   font-size: 13px;
-  background: #fbfbfb;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
+  height: 36px; 
+  padding: 5px; 
+  width: 50%; 
 }
 
 .full-form {
-  box-sizing: border-box; 
-  height: 36px; 
-  width: 100%; 
-  padding: 5px; 
   color: #545658; 
   font-size: 13px; 
+  height: 36px; 
   line-height: 2; 
-  background: #fbfbfb; 
-  border: 1px solid #d9d9d9; 
+  outline-color: #01bfbd;
+  padding: 5px; 
+  width: 100%; 
 }
 
 .course-box {
@@ -136,26 +140,26 @@
 }
 
 .area-form {
-  box-sizing: border-box;
-  width: 100%; 
-  height: 100px;
-  padding: 5px; 
+  border-radius: 3px;
   color: #545658;
   font-size: 13px; 
+  height: 100px;
   line-height: 2; 
-  background: #fbfbfb; 
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
+  outline-color: #01bfbd;
+  padding: 5px; 
+  width: 100%; 
 }
 
 .submit-button {
-  padding: 13px; 
   background: #01bfbd; 
-  color: #fff; 
-  width: 100%;
   border: none; 
+  color: #fff; 
+  cursor: pointer;
   font-size: 13px;
   font-weight: 500;
+  outline: none;
+  padding: 13px; 
+  width: 100%;
 }
 
 .questions {
