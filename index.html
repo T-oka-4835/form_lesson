@@ -13,7 +13,7 @@
     <div class="body-wrapper">
       <div class="inner-wrapper">
         <div class="main-wrapper">
-        <!-- アカウント情報の区切りより上部 -->
+          <!-- アカウント情報の区切りより上部 -->
           <div class="top-container">
             <h4 class="top-text">アカウント作成</h4>
             <div class="sns-button-container">
@@ -81,19 +81,22 @@
               <p class="form-text">パスワード(確認用)<span class="caution">※</span></p>
               <input type="re-password" name="password" required class="full-form form-design form-margin"> 
             </div>
-            <div class="form-wrapper">
+            <div class="form-wrapper course-wrapper">
               <p class="form-text">希望コース</p>
-                <div class="course-container form-margin">
-                  <label class="course-box">
-                    <input type="checkbox" name="course" value="frontend" >フロントエンド
-                  </label>
-                  <label class="course-box">
-                    <input type="checkbox" name="course" value="backend">バックエンド
-                  </label>
-                  <label class="course-box">
-                    <input type="checkbox" name="course" value="app" >アプリ
-                  </label>
+              <div class="course-container form-margin">
+                <div class="course-box">
+                  <input type="checkbox" name="course" value="frontend" id="frontend">
+                  <label class="course-text" for="frontend">フロントエンド</label>
                 </div>
+                <div class="course-box">
+                  <input type="checkbox" name="course" value="backend" id="backend">
+                  <label class="course-text" for="backend" >バックエンド</label>
+                </div>
+                <div class="course-box">
+                  <input type="checkbox" name="course" value="app" id="app">
+                  <label class="course-text" for="app">アプリ</label>
+                </div>
+              </div>
             </div>
             <div class="form-wrapper">
               <p class="form-text">備考</p>
