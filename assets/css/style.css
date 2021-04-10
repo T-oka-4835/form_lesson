@@ -167,7 +167,7 @@
   border-radius: 50%;
 }
 
-.gender-label:checked + span::after {
+.gender-button:checked + span::after {
   content: ''; 
   position: absolute;
   top: 50%;
