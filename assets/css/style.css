@@ -25,6 +25,12 @@
   border-color: rgba(59, 133, 133, .4);
   box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
 }
+
+.form-appearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 /* 共通クラス */
 
 .body-wrapper {
