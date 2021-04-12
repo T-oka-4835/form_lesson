@@ -4,6 +4,7 @@
 .sns-button {
   box-sizing: border-box;
   display: inline-block;
+  transition: .3s;
   font-size: 13px;
   padding: 13px;
   text-align: center;
@@ -12,15 +13,23 @@
 }
 
 .form-design {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   box-sizing: border-box;
+  border-radius: 3px;
   border: 1px solid #d9d9d9;
+}
+
+.form-design:focus {
+  outline: 0;
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
 }
 /* 共通クラス */
 
 .body-wrapper {
   box-sizing: border-box;
-  background: #f2f6f7;
+  background-color: #f2f6f7;
   padding: 32px 0;
   width: 100%;
 }
@@ -31,7 +40,7 @@
 }
 
 .main-wrapper {
-  background: #fff;
+  background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
   border-radius: 4px;
@@ -51,16 +60,25 @@
 }
 
 .facebook {
-  background: #3b5999;
+  background-color: #3b5999;
   border: 1px solid #3b5999; 
   color: #fff;
+} 
+
+.facebook:hover {
+  background-color: #344e87;
+  border-color: transparent; 
 }
 
 .google {
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #d9d9d9; 
   color: #dd4b39;
   margin-left: 8px;
+}
+
+.google:hover {
+  background-color: #f7f7f7;
 }
 
 .sns-message {
@@ -76,6 +94,7 @@
   display: flex; 
   justify-content: center;
   margin: 20px 0;
+  height: 16px;
 }
 
 .account-border:before, .account-border:after {
@@ -127,7 +146,6 @@
 .name-form {
   color: #545658;
   height: 36px;
-  outline-color: #01bfbd;
   padding: 5px;
   width: 100%;
 }
@@ -162,7 +180,7 @@
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 50%;
 }
@@ -193,7 +211,6 @@
   font-size: 13px; 
   height: 36px; 
   line-height: 2; 
-  outline-color: #01bfbd;
   padding: 5px; 
   width: 100%; 
 }
@@ -247,13 +264,13 @@
   font-size: 13px; 
   height: 100px;
   line-height: 2; 
-  outline-color: #01bfbd;
   padding: 5px; 
   width: 100%; 
 }
 
 .submit-button {
-  background: #01bfbd; 
+  background-color: #01bfbd; 
+  transition: .3s;
   border: none; 
   color: #fff; 
   cursor: pointer;
@@ -264,16 +281,44 @@
   width: 100%;
 }
 
+.submit-button:hover {
+  background-color: #01a6a4;
+}
+
+.submit-button:active{
+  background-color: #fff; 
+  color: #01a6a4; 
+  border: 1px solid #d9d9d9;
+}
+
+.agree-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .questions {
   font-size: 12px;
   text-align: center;
 }
 
+.question-text {
+  line-height: 16px;
+}
+
 .form-link {
-  color: #01bfbd; 
+  color: #01a6a4;
+}
+
+.form-link:hover {
+  color: #01bfbd;
 }
 
 .question-mail {
-  display: block;
+  display: inline-block;
   margin-top: 8px;
+}
+
+.link-border:hover {
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
 }
